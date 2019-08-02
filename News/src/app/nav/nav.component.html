@@ -1,5 +1,14 @@
-<p>{{NavText}}!</p>
-{{test.userId}}
-{{test.id}}
-{{test.title}}
-{{test.completed}}
+
+
+<div class = "row"> 
+    <div class = "title" *ngFor = "let item of test" class = "col-4">
+
+        <div class="card">
+                    <img class="card-img-top"src={{item.urlToImage}} alt="Card image cap">
+                    <div class="card-body">
+                         <h5 class="card-title">{{item.title}}</h5>
+                        <p class="card-text"> {{item.description}}</p>
+                    </div>
+                  </div>
+    </div>
+</div>

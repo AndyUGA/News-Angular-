@@ -10,14 +10,14 @@ import { map } from "rxjs/operators";
 })
 export class NavComponent implements OnInit {
   NavText = "This is the nav bar";
-  test : any;
+  public test: any = [];
   constructor(private http:HttpClient) {
 
 
    }
 
   ngOnInit() {
-    let apiURL = "https://jsonplaceholder.typicode.com/todos/1";
+    let apiURL = "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=0c69f9ba9a494e84a33b2749dab3fc5e";
   
     /*
       let data2 = this.http
@@ -25,8 +25,8 @@ export class NavComponent implements OnInit {
       .subscribe(data => this.test = data);
     */
 
-    let testData = this.http.get(apiURL).subscribe(result => this.test = result);
-
+    let testData = this.http.get(apiURL).subscribe(result => this.test = result.articles);
+    
      
   }
 

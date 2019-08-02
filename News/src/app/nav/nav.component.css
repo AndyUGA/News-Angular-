@@ -1,0 +1,13 @@
+
+
+.card {
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+    min-height: 100%;
+}
+
+.card-img-top {
+    width: 340px;
+    height: 190px;
+}
