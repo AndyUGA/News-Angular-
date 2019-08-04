@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+.Header {
+    background-color: #209CEE;
+    min-height: 20vh;
+    margin-bottom: 4vh;
+}
+
+.HeaderTitle {
+    color: white;
+    font-size: 4vw;
+}
+
+div > img {
+    height: 15vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
