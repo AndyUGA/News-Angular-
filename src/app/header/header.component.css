@@ -7,7 +7,7 @@
 
 .HeaderTitle {
     color: white;
-    font-size: 4vw;
+    font-size: 4vh;
 }
 
 div > img {
@@ -15,4 +15,6 @@ div > img {
     padding-top: 2vh;
     padding-bottom: 2vh;
 }
+
+
 

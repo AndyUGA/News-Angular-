@@ -4,7 +4,13 @@
 
         <div class="card">
             <a href={{item.url}} target="_blank">
+                    
+                <div *ngIf=item.urlToImage > 
                     <img class="card-img-top"src={{item.urlToImage}} alt="Card image cap">
+                </div>
+                <div *ngIf=!item.urlToImage > 
+                        <img class="card-img-top"src="http://cdn.onlinewebfonts.com/svg/img_340012.png" alt="Card image cap">
+                    </div>
             </a>
                     <div class="card-body">
                          <h5 class="card-title">{{item.title}}</h5>
