@@ -12,6 +12,10 @@
    height: 25vh;
 }
 
+.bold {
+    font-weight: bold;
+}
+
 @media (min-width: 300px) { 
 
     .card-img-top {
