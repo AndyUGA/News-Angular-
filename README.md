@@ -6,10 +6,11 @@ My personal website where you can read about the latest news in the US!
 
 
 ## Technologies utitilized in this project:
+- [Angular](http://angular.io)
+- [TypeScript](https://www.typescriptlang.org/)
 - [Node.js](https://nodejs.org/en/) 
 - [Express.js](https://expressjs.com)
 - [Bootstrap 4](https://getbootstrap.com)
-- [TypeScript](https://www.typescriptlang.org/)
 - HTML5
 - CSS3
 
