@@ -3,7 +3,7 @@
   <div class = "title col-sm-12 col-md-6 col-lg-4 col-xl-3 pb-4" *ngFor = "let item of newsData.articles">
 
       <div class="card">
-          <a href={{item.url}}>
+          <a href={{item.url}} target="_blank">
                   
               <div *ngIf=item.urlToImage > 
                   <img class="card-img-top"src={{item.urlToImage}} alt="Card image cap">
