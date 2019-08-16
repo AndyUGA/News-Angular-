@@ -11,10 +11,10 @@ import {NewsDataService} from '../news-data.service';
 })
 export class NewsDataComponent implements OnInit {
 
-  public test: any = [];
+  public newsData: any = [];
   constructor(private http:HttpClient, private NewsDataService : NewsDataService ) {
     this.NewsDataService.init().subscribe((data) => {
-      this.test = data;
+      this.newsData = data;
       console.log(data);
     })
 
