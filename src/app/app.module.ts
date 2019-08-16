@@ -7,19 +7,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { HeaderComponent } from './header/header.component';
+import { NewsDataComponent } from './news-data/news-data.component';
+import {NewsDataService} from './news-data.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
-    HeaderComponent
+    HeaderComponent,
+    NewsDataComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [NewsDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

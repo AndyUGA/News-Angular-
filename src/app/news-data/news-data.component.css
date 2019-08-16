@@ -1,0 +1,33 @@
+
+
+.card {
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    min-height: 100%;
+}
+
+.card-img-top {
+    
+   width: 100%;
+   height: 25vh;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+@media (min-width: 300px) { 
+
+    .card-img-top {
+        
+    }
+    
+ }
+
+ @media (min-width: 700px) { 
+
+    .test {
+        background-color: blue;
+    }
+    
+ }
