@@ -2,7 +2,7 @@
 # Simple News
 My personal website where you can read about the latest news in the US!
 
-![Image](https://cdn3.iconfinder.com/data/icons/linecons-free-vector-icons-pack/32/news-512.png)
+![alt-text-1](https://github.com/AndyUGA/Simple-News/blob/master/src/assets/Images/News%20Screenshot.PNG)
 
 
 ## Technologies utitilized in this project:
