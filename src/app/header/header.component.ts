@@ -6,13 +6,10 @@ import { ActivatedRoute } from "@angular/router";
   styleUrls: ["./header.component.css"]
 })
 export class HeaderComponent implements OnInit {
-  public type: any;
-  constructor(private route: ActivatedRoute) {}
+
+  constructor() {}
 
   ngOnInit() {
-    this.route.paramMap.subscribe(params => {
-      console.log(params);
-      this.type = params.get("type");
-    });
+    
   }
 }
