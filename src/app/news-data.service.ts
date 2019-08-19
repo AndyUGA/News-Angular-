@@ -8,16 +8,17 @@ export class NewsDataService {
   public test: any;
   constructor(private http: HttpClient, private route: ActivatedRoute) {}
 
-  init(type: string) {
-    /*
+
+  getData(type: string) {
+     /*
     this.route.paramMap.subscribe(params => {
       console.log(params);
     });
     */
-    console.log("Type is " + type);
-    let apiURL = "https://newsapi.org/v2/top-headlines?country=us&category=" + type + "&apiKey=0c69f9ba9a494e84a33b2749dab3fc5e";
-    console.log(apiURL);
-    return this.http.get(apiURL);
+   console.log("From Service: Type is " + type);
+   let apiURL = "https://newsapi.org/v2/top-headlines?country=us&category=" + type + "&apiKey=0c69f9ba9a494e84a33b2749dab3fc5e";
+   console.log(apiURL);
+   return this.http.get(apiURL);
   }
 
   ngOnInit() {}

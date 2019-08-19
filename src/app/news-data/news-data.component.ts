@@ -11,15 +11,24 @@ export class NewsDataComponent implements OnInit {
   public newsData: any = [];
   public type: any;
   constructor(private http: HttpClient, private NewsDataService: NewsDataService, private route: ActivatedRoute) {
+
     this.route.paramMap.subscribe(params => {
-      console.log(params);
+    
       this.type = params.get("type");
+      console.log("From Component: Type is " + this.type);
+      this.NewsDataService.getData(this.type).subscribe(data => {
+        this.newsData = data;
+     
+      });
     });
-    this.NewsDataService.init(this.type).subscribe(data => {
-      this.newsData = data;
-      //console.log(data);
-    });
+
+    
   }
 
-  ngOnInit() {}
+  ngOnInit() {
+   
+  }
+
+
+
 }
