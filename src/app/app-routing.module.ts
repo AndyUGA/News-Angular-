@@ -4,7 +4,7 @@ import { NavComponent } from "./nav/nav.component";
 import { NewsDataComponent } from "./news-data/news-data.component";
 import { HeaderComponent } from "./header/header.component";
 
-const routes: Routes = [{ path: "nav", component: NavComponent }, { path: "data/:type", component: NewsDataComponent }, { path: "header", component: HeaderComponent }];
+const routes: Routes = [{ path: "", component: NewsDataComponent }, { path: "nav", component: NavComponent }, { path: "data/:type", component: NewsDataComponent }, { path: "header", component: HeaderComponent }];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

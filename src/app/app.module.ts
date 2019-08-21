@@ -1,6 +1,6 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
-
+import {FormsModule} from '@angular/forms';
 import { HttpClientModule } from "@angular/common/http";
 
 import { AppRoutingModule } from "./app-routing.module";
@@ -12,7 +12,7 @@ import { NavComponent } from "./nav/nav.component";
 
 @NgModule({
   declarations: [AppComponent, NavComponent, HeaderComponent, NewsDataComponent],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  imports: [BrowserModule, FormsModule, AppRoutingModule, HttpClientModule],
   providers: [NewsDataService],
   bootstrap: [AppComponent]
 })
