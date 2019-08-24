@@ -1,3 +1,7 @@
 .header {
   background-color: #209cee;
 }
+
+li > a.active {
+  font-weight: bold;
+}
