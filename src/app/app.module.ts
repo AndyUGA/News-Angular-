@@ -9,9 +9,10 @@ import { HeaderComponent } from "./header/header.component";
 import { NewsDataComponent } from "./news-data/news-data.component";
 import { NewsDataService } from "./news-data.service";
 import { NavComponent } from "./nav/nav.component";
+import {Reduce} from "./Pipes/Reduce";
 
 @NgModule({
-  declarations: [AppComponent, NavComponent, HeaderComponent, NewsDataComponent],
+  declarations: [AppComponent, NavComponent, HeaderComponent, NewsDataComponent, Reduce],
   imports: [BrowserModule, FormsModule, AppRoutingModule, HttpClientModule],
   providers: [NewsDataService],
   bootstrap: [AppComponent]
