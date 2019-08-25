@@ -5,3 +5,13 @@
 li > a.active {
   font-weight: bold;
 }
+
+a > img {
+  height: 15vh;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+
+.navText {
+  color: white;
+}
