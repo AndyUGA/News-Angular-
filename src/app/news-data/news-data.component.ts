@@ -19,7 +19,7 @@ export class NewsDataComponent implements OnInit {
       }
 
       this.NewsDataService.getDataByCategory(this.type).subscribe(data => {
-        console.log(data);
+        console.log(data.articles.length);
         this.newsData = data;
       });
     });
@@ -29,6 +29,7 @@ export class NewsDataComponent implements OnInit {
 
   updateData() {
     this.NewsDataService.getDataByKeyword(this.searchQuery).subscribe(data => {
+      console.log(data.articles.length);
       this.newsData = data;
     });
   }

@@ -21,6 +21,10 @@
   float: right;
 }
 
+.paddingBottom {
+  padding-bottom: 2vh;
+}
+
 .searchBar {
   overflow: hidden;
   padding-right: 0.5em;
@@ -28,14 +32,4 @@
 
 .fullWidth {
   width: 100%;
-}
-@media (min-width: 300px) {
-  .card-img-top {
-  }
-}
-
-@media (min-width: 700px) {
-  .test {
-    background-color: blue;
-  }
 }
