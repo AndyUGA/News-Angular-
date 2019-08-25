@@ -4,6 +4,10 @@
   min-height: 100%;
 }
 
+.searchBarBorder {
+  border-style: solid;
+  border-width: thin;
+}
 .card-img-top {
   width: 100%;
   height: 25vh;
