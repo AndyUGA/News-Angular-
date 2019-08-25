@@ -13,5 +13,11 @@ export class NewsDataService {
     return this.http.get(apiURL);
   }
 
+  getDataByKeyword(type: string) {
+    let apiURL = "https://newsapi.org/v2/everything?q=" + type + "&apiKey=0c69f9ba9a494e84a33b2749dab3fc5e";
+
+    return this.http.get(apiURL);
+  }
+
   ngOnInit() {}
 }

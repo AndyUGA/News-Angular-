@@ -28,7 +28,7 @@ export class NewsDataComponent implements OnInit {
   ngOnInit() {}
 
   updateData() {
-    this.NewsDataService.getData(this.searchQuery).subscribe(data => {
+    this.NewsDataService.getDataByKeyword(this.searchQuery).subscribe(data => {
       this.newsData = data;
     });
   }

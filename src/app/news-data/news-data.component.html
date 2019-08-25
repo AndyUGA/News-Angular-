@@ -1,3 +1,7 @@
+<button (click)="updateData()" class="floatRight">Search</button>
+<div placeholder="Enter search query" class="searchBar"><input placeholder="Enter Search Query" type="text" class=" fullWidth" id="name" required [(ngModel)]="searchQuery" /></div>
+
+​
 <div class="row">
   <div class="title col-sm-12 col-md-6 col-lg-4 col-xl-3 pb-4" *ngFor="let item of newsData.articles">
     <div class="card">

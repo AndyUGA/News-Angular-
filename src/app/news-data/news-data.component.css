@@ -13,6 +13,18 @@
   font-weight: bold;
 }
 
+.floatRight {
+  float: right;
+}
+
+.searchBar {
+  overflow: hidden;
+  padding-right: 0.5em;
+}
+
+.fullWidth {
+  width: 100%;
+}
 @media (min-width: 300px) {
   .card-img-top {
   }
