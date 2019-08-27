@@ -19,7 +19,7 @@ export class NewsDataComponent implements OnInit {
       }
 
       this.NewsDataService.getDataByCategory(this.type).subscribe(data => {
-       
+        
         this.newsData = data;
       });
     });

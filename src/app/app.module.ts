@@ -9,10 +9,10 @@ import { HeaderComponent } from "./header/header.component";
 import { NewsDataComponent } from "./news-data/news-data.component";
 import { NewsDataService } from "./news-data.service";
 import { NavComponent } from "./nav/nav.component";
-import {Reduce} from "./Pipes/Reduce";
+import {RemoveLastHyphen} from "./Pipes/RemoveLastHyphen";
 
 @NgModule({
-  declarations: [AppComponent, NavComponent, HeaderComponent, NewsDataComponent, Reduce],
+  declarations: [AppComponent, NavComponent, HeaderComponent, NewsDataComponent, RemoveLastHyphen],
   imports: [BrowserModule, FormsModule, AppRoutingModule, HttpClientModule],
   providers: [NewsDataService],
   bootstrap: [AppComponent]
